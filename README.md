@@ -7,7 +7,7 @@ ZorKode I: The Great Pythonic Dungeon is a Python-interpreted programming langua
 # Quick Start
 Download the [*ZorKode.py*](https://github.com/Yaykuby/ZorKode/blob/main/ZorKode.py) file and place it within a directory of your choosing. Create a file in that same directory called *ZorKode.zrk*. Open the same directory in your IDE of choice and start exploring the Great Pythonic Dungeon!
 
-// Note: If you tend to need to use python instead of python3 whilst running python code, change line 390 of *ZorKode.py* from:
+// Note: If you tend to need to use python instead of python3 whilst running python code, change line 393 of *ZorKode.py* from:
 
 *craftedResult = subprocess.run(["python3", "CraftedCode.py"], capture_output=True, text=True)*
 
