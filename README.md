@@ -26,16 +26,16 @@ Just like Zork, ZorKode has plenty of keywords that the programmer can use to ta
 
 *west* - Moves your adventurer in the western direction
 
-take <item> - Allows you to take an item present within the room your adventurer currently resides and adds it to their inventory. Only one item can be taken at a time.
+*take /item/* - Allows you to take an item present within the room your adventurer currently resides and adds it to their inventory. Only one item can be taken at a time.
 
-make variable <variable_name> - Allows the adventurer to create a variable and place it within their inventory for later use. Can only be used inside the Assembly Room.
+*make variable /variable_name/* - Allows the adventurer to create a variable and place it within their inventory for later use. Can only be used inside the Assembly Room.
 
-craft <code> - Allows the user to craft a word or specific line of code to then be added to your adventurer's inventory.
+*craft /code/* - Allows the user to craft a word or specific line of code to then be added to your adventurer's inventory.
 
-write <inventory_item> - Allows the adventurer to take an item found within their inventory and write it inside of CraftedCode.py, the place where your written code presides.
+*write /inventory_item/* - Allows the adventurer to take an item found within their inventory and write it inside of CraftedCode.py, the place where your written code presides.
 
-place <item> - Allows the adventurer to place items from their inventory onto the assembly table to then be shaped into a line of code. Note: items will be placed in the order you place them in.
+*place /inventory_item/* - Allows the adventurer to place items from their inventory onto the assembly table to then be shaped into a line of code. Note: items will be placed in the order you place them in.
 
-pickup <code> - Allows the adventurer to pickup a satisfactory line of code from the assembly table and add it to their inventory.
+*pickup /code/* - Allows the adventurer to pickup a satisfactory line of code from the assembly table and add it to their inventory.
 
-inventory - Allows the adventurer to view their inventory
+*inventory* - Allows the adventurer to view their inventory
