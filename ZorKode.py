@@ -147,7 +147,10 @@ class ZorKode:
                     if len(inv) == 0:
                         lineToPrint = "You are empty-handed."
                     else:
-                        lineToPrint = inv
+                        buildInv = "You are carrying:" + "\n"
+                        for item in inv:
+                            buildInv = buildInv + "  " + item + "\n"
+                        lineToPrint = buildInv
                 
                 ## ADVENTURER EXAMINE IMPLEMENTATION ##################################################################
                 elif line.startswith("examine"):
