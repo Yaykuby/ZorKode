@@ -1,0 +1,36 @@
+west
+take paper
+take pencil
+east
+east
+take chalkboard
+take chalk
+west
+craft a = 0
+craft while a <= 50:
+craft /tab/if a % 15 == 0:
+craft /tab//tab/print("FizzBuzz")
+craft /tab//tab/a = a + 1
+craft /tab/elif a % 5 == 0:
+craft /tab//tab/print("Buzz")
+craft /tab//tab/a = a + 1
+craft /tab/elif a % 3 == 0:
+craft /tab//tab/print("Fizz")
+craft /tab//tab/a = a + 1
+craft /tab/else:
+craft /tab//tab/print(a)
+craft /tab//tab/a = a + 1
+write a = 0
+write while a <= 50:
+write /tab/if a % 15 == 0:
+write /tab//tab/print("FizzBuzz")
+write /tab//tab/a = a + 1
+write /tab/elif a % 5 == 0:
+write /tab//tab/print("Buzz")
+write /tab//tab/a = a + 1
+write /tab/elif a % 3 == 0:
+write /tab//tab/print("Fizz")
+write /tab//tab/a = a + 1
+write /tab/else:
+write /tab//tab/print(a)
+write /tab//tab/a = a + 1
