@@ -8,12 +8,34 @@ ZorKode I: The Great Pythonic Dungeon is a Python-interpreted programming langua
 Download the ZorKode.py file, along with the ZorKode.zrk file and place them within the same directory. Open the directory in your IDE of choice and start exploring!
 
 // Note: If you tend to need to use python instead of python3 whilst running python code, change line 390 of ZorKode.py from:
-<craftedResult = subprocess.run(["python3", "CraftedCode.py"], capture_output=True, text=True)>
+craftedResult = subprocess.run(["python3", "CraftedCode.py"], capture_output=True, text=True)
 to
-<craftedResult = subprocess.run(["python", "CraftedCode.py"], capture_output=True, text=True)>
+craftedResult = subprocess.run(["python", "CraftedCode.py"], capture_output=True, text=True)
 Not doing so could have unforseen consequences and cause the program to fail.
 
 # Keywords
 Just like Zork, ZorKode has plenty of keywords that the programmer can use to take various actions inside the Great Pythonic Dungeon, such keywords are:
 
-<examine> - 
+*examine* - When used by itself, examine has you take a look around and describe what is seen in your environment. When examining a specific item to learn more about it, use *examine <item>*.
+
+*north* - Moves your adventurer in the northern direction
+
+*south* - Moves your adventurer in the southern direction
+
+*east* - Moves your adventurer in the eastern direction
+
+*west* - Moves your adventurer in the western direction
+
+*take <item>* - Allows you to take an item present within the room your adventurer currently resides and adds it to their inventory. Only one item can be taken at a time.
+
+*make variable <variable_name>* - Allows the adventurer to create a variable and place it within their inventory for later use. Can only be used inside the Assembly Room.
+
+*craft <code>* - Allows the user to craft a word or specific line of code to then be added to your adventurer's inventory.
+
+*write <inventory_item>* - Allows the adventurer to take an item found within their inventory and write it inside of CraftedCode.py, the place where your written code presides.
+
+*place <item>* - Allows the adventurer to place items from their inventory onto the assembly table to then be shaped into a line of code. Note: items will be placed in the order you place them in.
+
+*pickup <code>* - Allows the adventurer to pickup a satisfactory line of code from the assembly table and add it to their inventory.
+
+*inventory* - Allows the adventurer to view their inventory
