@@ -39,3 +39,10 @@ Just like Zork, ZorKode has plenty of keywords that the programmer can use to ta
 *pickup /code/* - Allows the adventurer to pickup a satisfactory line of code from the assembly table and add it to their inventory.
 
 *inventory* - Allows the adventurer to view their inventory
+
+# Example Programs
+Hello World!
+<img width="180" alt="Screenshot 2024-12-10 at 10 21 59 PM" src="https://github.com/user-attachments/assets/dd371623-20fd-4fd5-96fc-7cc7d8d0d7eb">
+
+FizzBuzz
+<img width="307" alt="Screenshot 2024-12-10 at 8 14 48 PM" src="https://github.com/user-attachments/assets/74877bae-9583-4e51-ae7b-d8e5560304fe">
