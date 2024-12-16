@@ -371,8 +371,26 @@ class ZorKode:
                         else:
                             pass
                     else:
-                        lineToPrint = "Sorry but unless you're picking up some wooden blocks off" + "\n" + "of a table, you aren't collecting anything."       
-
+                        lineToPrint = "Sorry but unless you're picking up some wooden blocks off" + "\n" + "of a table, you aren't collecting anything."   
+                
+                ## ADVENTURER EAT IMPLEMENTATION ######################################################################
+                elif line.startswith("eat"):
+                    previousLine = True
+                    noun = line.split("eat")[1].strip()
+                    if noun == "water":
+                        if noun in inv:
+                            inv.remove("water")
+                            lineToPrint = "I'm not sure how you eat the water AND the cup, but you feel more refreshed than you did a second ago."
+                        else:
+                            lineToPrint = "You have no such water to eat!"
+                    elif noun == "bread":
+                        if noun in inv:
+                            inv.remove("bread")
+                            lineToPrint = "You eat the bread, giving you a slightly drier mouth and a full stomach."
+                        else:
+                            lineToPrint = "You have no such bread to eat!"
+                    else:
+                        lineToPrint = f"Yeah, maybe you should try eating some food and not {noun}."
                 ## UNRECOGNIZED STATEMENT HANDLER #####################################################################
                 # Handles statements that aren't recognized or properly formatted
                 elif line.startswith("\n"):
@@ -400,4 +418,4 @@ class ZorKode:
             print("Crafted Code Return Code:")
             print(craftedResult.returncode)
 
-ZorKode.interpret("ZorKode.zrk", {})  
+ZorKode.interpret("ZorKode4.zrk", {})  
