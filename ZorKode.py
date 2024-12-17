@@ -367,7 +367,7 @@ class ZorKode:
                             else: 
                                 inv.append(placedLine)
                                 lineToPrint = f"You picked up: {placedLine}. Now is time to write it!"
-                                placedLine = ""
+                                placedLine = "" 
                         else:
                             pass
                     else:
@@ -391,6 +391,29 @@ class ZorKode:
                             lineToPrint = "You have no such bread to eat!"
                     else:
                         lineToPrint = f"Yeah, maybe you should try eating some food and not {noun}."
+                
+                ## ADVENTURER DRINK IMPLEMENTATION ###################################################################
+                elif line.startswith("drink"):
+                    previousLine = True
+                    noun = line.split("drink")[1].strip()
+                    if noun == "water":
+                        if noun in inv:
+                            inv.remove("water")
+                            lineToPrint = "Ahh... Refreshing."
+                        else:
+                            lineToPrint = "Though drinking water is a good idea, you sadly have none to drink."
+                    elif noun == "bread":
+                        if noun in inv:
+                            lineToPrint = "If only you had a blender..."
+                        else:
+                            lineToPrint = "How can you drink that?"
+                    elif noun in inv:
+                        lineToPrint = f"I don't think the {noun} would agree with you."
+                    elif noun not in inv:
+                        lineToPrint = f"You can't see any {noun} here!"
+                    else:
+                        lineToPrint = f"There's no drinking of {noun}."
+                    
                 ## UNRECOGNIZED STATEMENT HANDLER #####################################################################
                 # Handles statements that aren't recognized or properly formatted
                 elif line.startswith("\n"):
